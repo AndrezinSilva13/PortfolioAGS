@@ -1,0 +1,224 @@
+/* Estilo Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #61ff00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #62ff00;
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #61ff00;
+}
+
+/* Estilo do Cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo do Topo */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: #61ff00;
+    font-size: 50px;
+}
+
+.topo-do-site p {
+    color: white;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* Especialidades */
+
+section.especialidades {
+    padding: 40px 4%;
+    margin-bottom: 40px;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+    justify-content: center;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.452);
+}
+
+.especialidades  i {
+    font-size: 500%;
+    color: #61ff00;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+/* Estilo do Sobre */
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #61ff00;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #61ff00;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Portfolio */
+
+section.portfolio {
+    padding: 40px 4%;
+}
+
+section.portfolio .flex {
+    align-items: center;
+    gap: 60px;
+    padding: 70px 0;
+}
+
+section.portfolio .img-port {
+    border: 5px solid #61ff00;
+    border-radius: 20px;
+    padding: 8px;
+}
